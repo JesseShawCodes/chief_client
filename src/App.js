@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Projects from './containers/projects'
 
+import './App.css'
+
 import { searchProjects } from './actions/actions.js'
 import { connect } from 'react-redux'
 
@@ -40,6 +42,7 @@ class App extends Component {
         <header className="App-header">
           <img src="https://agencychief.com/themes/chief/logo.svg" className="App-logo" alt="logo" />
         </header>
+        <h1 className="main-heading">Projects</h1>
         {this.renderProjects()}
       </div>
     );
