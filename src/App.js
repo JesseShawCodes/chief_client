@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Projects from './containers/projects'
+import Howto from './components/howto'
 
 import './App.css'
 
 import { searchProjects } from './actions/actions.js'
 import { connect } from 'react-redux'
+
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -42,6 +45,9 @@ class App extends Component {
         <header className="App-header">
           <img src="https://agencychief.com/themes/chief/logo.svg" className="App-logo" alt="logo" />
         </header>
+        <Router>
+          <Route exact path="/about" component={Howto} />
+        </Router>
         <h1 className="main-heading">Projects</h1>
         {this.renderProjects()}
       </div>

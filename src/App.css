@@ -1,4 +1,13 @@
+img.App-logo {
+    width: 200px;
+}
+
+header.App-header {
+    text-align: left;
+}
+
 h1.main-heading {
     text-align: center;
     border-top: 2px black dashed;
 }
+
